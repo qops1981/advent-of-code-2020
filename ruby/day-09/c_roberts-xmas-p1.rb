@@ -66,8 +66,6 @@ class XmasCipher
 
 end
 
-def two_sum(m, tried = []) EX_RP.each {|v| diff = m - v; return [v, diff] if tried.include?(diff); tried << v } end
-
 cipher = XmasCipher.new(File.read('../../input/day-09/input').split("\n").map(&:to_i), 25)
 
 # p cipher.process
